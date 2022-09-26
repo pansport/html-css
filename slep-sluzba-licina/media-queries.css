@@ -1,0 +1,282 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .section-header {
+    padding: 0 4.8rem;
+  }
+
+  .hero-container {
+    gap: 3.2rem;
+  }
+
+  .section-gallery {
+    padding: 4.8rem 0;
+  }
+
+  .testimonial-part {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .testimonials {
+    margin-top: 4.8rem;
+  }
+
+  /* .gallery-part {
+    grid-template-columns: 1fr 1fr;
+  } */
+
+  .address-container {
+    padding: 0 2.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .section-header {
+    padding: 0 3.2rem;
+  }
+
+  .hero-link-main:link,
+  .hero-link-main:visited {
+    font-size: 2.4rem;
+    border: 2px solid #fff;
+  }
+  .hero-link-main:hover,
+  .hero-link-main:active {
+    border: 2px solid gray;
+  }
+
+  .hero-link-secondary:link,
+  .hero-link-secondary:visited {
+    font-size: 1.8rem;
+    border: 1px solid #fff;
+  }
+  .hero-link-secondary:hover,
+  .hero-link-secondary:active {
+    border: 1px solid gray;
+  }
+
+  .margin-right-md {
+    margin-right: 2.4rem;
+  }
+
+  .about-us-list-box {
+    padding: 1.6rem 4.8rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+  }
+
+  .about-us-text {
+    font-size: 2rem;
+  }
+
+  .gallery-part {
+    padding: 6.4rem 3.2rem 6.4rem 0;
+  }
+}
+
+/**************************/
+/* BELOW 896px (Tablets) */
+/**************************/
+
+@media (max-width: 56em) {
+  .header-nav {
+    background-color: rgba(255, 255, 255, 0.96);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .header-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .mobile-menu-close {
+    z-index: 999;
+    display: block;
+  }
+  .nav-open .mobile-menu-open {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-item:link,
+  .nav-item:visited {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .section-hero {
+    padding-bottom: 6.4rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box {
+    justify-self: center;
+  }
+
+  .hero-img-box {
+    margin-top: 3.2rem;
+  }
+
+  .heading-primary {
+    margin-bottom: 3.2rem;
+  }
+
+  .about-us {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-list-box {
+    padding: 3.2rem 4.8rem;
+    font-size: 1.8rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .about-us-text-box {
+    padding-top: 2.4rem;
+  }
+
+  .testimonials {
+    column-gap: 4.8rem;
+  }
+
+  .gallery-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-wrapper {
+    gap: 4.8rem;
+  }
+
+  .gallery-part {
+    padding-top: 2.4rem;
+    padding-bottom: 3.2rem;
+    padding-left: 3.2rem;
+  }
+
+  .contacts-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .mobile-container {
+    border-right: none;
+  }
+
+  .socials {
+    row-gap: 3.2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3.2rem;
+  }
+
+  .socials-container {
+    grid-column: -3 / -1;
+  }
+
+  .section-contact {
+    padding-bottom: 3.2rem;
+  }
+
+  footer {
+    margin-top: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 688px (Mobiles) */
+/**************************/
+
+@media (max-width: 43em) {
+  .hero-link-main {
+    display: inline-block;
+    margin-bottom: 3.2rem;
+  }
+
+  .gallery-part {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contacts-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .contacts-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socials-container {
+    grid-column: 1;
+  }
+
+  .socials {
+    grid-template-columns: 1fr;
+  }
+
+  .address-container,
+  .socials-container,
+  .mobile-container {
+    justify-self: center;
+    border: none;
+  }
+
+  .address {
+    padding-left: 3.2rem;
+  }
+
+  .hero-link-secondary {
+    display: inline-block;
+  }
+
+  .footer-text {
+    padding: 0 3.2rem;
+    font-size: 1.2rem;
+  }
+
+  .section-about-us {
+    padding-bottom: 3.2rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-wrapper {
+    gap: 3.2rem;
+  }
+}
