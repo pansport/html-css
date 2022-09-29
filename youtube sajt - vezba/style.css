@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* SECTION HEADER/HERO */
+
+.header {
+  height: 100vh;
+  max-width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(imgs/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+}
+
+nav img {
+  width: 150px;
+}
+
+nav ul {
+  display: flex;
+  gap: 32px;
+
+  list-style: none;
+}
+
+nav ion-icon {
+  display: none;
+  height: 32px;
+  width: 32px;
+  color: #fff;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: all 0.3s;
+}
+nav ul li:hover::before {
+  width: 100%;
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.text-box h1 {
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 35px;
+  transition: all 0.3s;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #f44336;
+  border: 1px solid #f44336;
+}
+
+/* SECTION COURSES */
+
+.course {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.course h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.course-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: #777;
+  margin-bottom: 80px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-col {
+  background-color: #fff3f3;
+  flex-basis: 25%;
+  border-radius: 10px;
+  padding: 24px;
+  transition: all 0.3s;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row h3 {
+  margin-bottom: 20px;
+}
+
+.row p {
+  font-size: 15px;
+  color: #999;
+  line-height: 1.4;
+}
+/* SECTION CAMPUS */
+.campus {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.campus h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.layer:hover {
+  background-color: rgba(226, 0, 0, 0.7);
+}
+
+.campus-col h3 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.campus-col:hover h3 {
+  opacity: 1;
+  bottom: 45%;
+}
+
+/* SECTION FACILITIES */
+.facilites {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilites h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.facilites-col {
+  flex-basis: 31%;
+  text-align: left;
+}
+
+.facilites-col img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.facilites-col h3 {
+  font-weight: 600;
+}
+
+.facilites-col p {
+  font-size: 14px;
+  padding: 0;
+}
+
+/* SECTION TESTIMONIALS */
+
+.testimonials {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.testimonial-col {
+  background-color: #fff3f3;
+  padding: 24px;
+  display: flex;
+  text-align: left;
+  gap: 25px;
+  flex-basis: 47%;
+  border-radius: 10px;
+}
+
+.testimonial-col img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.testimonial-col div p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.testimonial-col div span {
+  font-weight: 600;
+}
+
+/* SECTION CTA */
+
+.cta {
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("imgs/banner2.jpg");
+  padding: 50px 150px;
+}
+
+.cta h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
+/* FOOTER */
